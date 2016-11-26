@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://GoodGodY.github.io">
+  <title>科学配置hive+mysql+hadoop | GoodGod Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="mysql配置先前的服务器mysql有一些莫名地故障，于是准备重装。贸然重装肯定是一件愚蠢的事，首先要做的是把原有的mysql卸载干净。但如果你的mysql能正常地工作，那当我没提起这件事。卸载遵循以下步骤：
+*运行rpm -qa|grep -i mysql。 显示如下：
+
+*删掉它们，当然之前要停止mysql服务，运行rpm -e --nodeps 包名
+*查找之前老版本mysql的目录、并且删">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学配置hive+mysql+hadoop">
+<meta property="og:url" content="http://GoodGodY.github.io/2016/11/24/hive-mysql/index.html">
+<meta property="og:site_name" content="GoodGod Blog">
+<meta property="og:description" content="mysql配置先前的服务器mysql有一些莫名地故障，于是准备重装。贸然重装肯定是一件愚蠢的事，首先要做的是把原有的mysql卸载干净。但如果你的mysql能正常地工作，那当我没提起这件事。卸载遵循以下步骤：
+*运行rpm -qa|grep -i mysql。 显示如下：
+
+*删掉它们，当然之前要停止mysql服务，运行rpm -e --nodeps 包名
+*查找之前老版本mysql的目录、并且删">
+<meta property="og:image" content="http://GoodGodY.github.io/img/3.jpg">
+<meta property="og:image" content="http://GoodGodY.github.io/img/4.jpg">
+<meta property="og:image" content="http://GoodGodY.github.io/img/5.jpg">
+<meta property="og:updated_time" content="2016-11-26T15:38:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="科学配置hive+mysql+hadoop">
+<meta name="twitter:description" content="mysql配置先前的服务器mysql有一些莫名地故障，于是准备重装。贸然重装肯定是一件愚蠢的事，首先要做的是把原有的mysql卸载干净。但如果你的mysql能正常地工作，那当我没提起这件事。卸载遵循以下步骤：
+*运行rpm -qa|grep -i mysql。 显示如下：
+
+*删掉它们，当然之前要停止mysql服务，运行rpm -e --nodeps 包名
+*查找之前老版本mysql的目录、并且删">
+  
+    <link rel="alternative" href="/atom.xml" title="GoodGod Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">GoodGod</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Stay simple, stay naive</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="/#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">GoodGod</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">GoodGod</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Stay simple, stay naive</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-hive-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      科学配置hive+mysql+hadoop
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="mysql配置">mysql配置</h2><p>先前的服务器mysql有一些莫名地故障，于是准备重装。贸然重装肯定是一件愚蠢的事，首先要做的是把原有的mysql卸载干净。但如果你的mysql能正常地工作，那当我没提起这件事。卸载遵循以下步骤：</p>
+<pre><code><span class="keyword">*</span>运行rpm -qa|<span class="string">grep -i mysql。 显示如下：</span>
+</code></pre><p><img src="/img/3.jpg" alt=""></p>
+<pre><code><span class="keyword">*</span>删掉它们，当然之前要停止mysql服务，运行rpm -e --nodeps 包名
+<span class="keyword">*</span>查找之前老版本mysql的目录、并且删除老版本mysql的文件和库,运行find / -name mysql，会出现很多关于mysql的目录，删掉它们。
+<span class="keyword">*</span>run <span class="string">"rm -rf /etc/my.cnf"</span>
+<span class="keyword">*</span>再次查找机器是否安装mysql --&gt;rpm -qa|<span class="string">grep -i mysql</span>
+</code></pre><p> 接下来安装mysql，方便起见，采用rpm的安装方式。下载mysql全家桶<a href="http://115.156.188.231/cdn.mysql.com//Downloads/MySQL-5.5/MySQL-5.5.53-1.linux2.6.x86_64.rpm-bundle.tar" target="_blank" rel="external">下载地址</a>，然后解压，安装=》sudo rpm -ivh MySQL-*。顺便转一下配置文件=》sudo cp /usr/share/mysql/my-large.cnf /etc/my.cnf。<br> 开启mysql服务=》  service mysql start。<br> 设置用户密码=》 sudo /usr/bin/mysqladmin -u root password ‘123’<br> 进入mysql=》mysql -uroot -p123<br> 创建mysql的hive用户=》 CREATE USER ‘hive’@’localhost’ IDENTIFIED BY “123”<br> 创建数据库=》create database hive;<br> 赋予权限=》 grant all on hive.<em> to hive@’%’  identified by ‘hive’; grant all on hive.</em> to hive@’localhost’  identified by ‘hive’; flush privileges;<br> 退出mysql<br>顺便可以验证下hive用户=》mysql -uhive -phive</p>
+<h2 id="hadoop安装">hadoop安装</h2><p>略<br>不过注意一个问题：之前hadoop start起来没问题，也没有仔细看日志，但是运行hadoop命令总是遇到connection refused的问题，之前以为防火墙的原因。后来发现是用户bashrc的环境配置默认hadoop是另一个版本的，所以hadoop的命令工具来自另个hadoop。这个错误原因有点离谱，但还是挺难发现的。</p>
+<h2 id="hive安装与配置">hive安装与配置</h2><h3 id="安装配置">安装配置</h3><p>首先下载 hive1.2.1=》 nohup wget <a href="http://mirrors.hust.edu.cn/apache/hive/stable/apache-hive-1.2.1-bin.tar.gz" target="_blank" rel="external">http://mirrors.hust.edu.cn/apache/hive/stable/apache-hive-1.2.1-bin.tar.gz</a> &amp;<br>解压 tar -zxvf ..<br>配置环境变量 .bashrc=&gt;<br>export HIVE_HOME=/home/feiwang/hive-2.0<br>export HIVE_CONF_DIR=/home/feiwang/hive-2.0/conf<br>export PATH=$PATH:$HIVE_HOME/bin<br>source .bashrc<br>修改hive配置文件，<strong>将默认文件mv成hive-site.xml，不是hive-default.xml！</strong>之前一直读取配置有问题就是这个原因。<br>主要修改以下参数：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionURL <span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">value</span>&gt;</span>jdbc:mysql://localhost:3306/hive <span class="tag">&lt;/<span class="title">value</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionDriverName <span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">value</span>&gt;</span>com.mysql.jdbc.Driver <span class="tag">&lt;/<span class="title">value</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionPassword <span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">value</span>&gt;</span>hive <span class="tag">&lt;/<span class="title">value</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span> </span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.hwi.listen.port <span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">value</span>&gt;</span>9999 <span class="tag">&lt;/<span class="title">value</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">description</span>&gt;</span>This is the port the Hive Web Interface will listen on <span class="tag">&lt;/<span class="title">descript</span> <span class="attribute">ion</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionUserName<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>hive<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">description</span>&gt;</span>Username to use against metastore database<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.metastore.uris<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>thrift://127.0.0.1:9083<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">description</span>&gt;</span>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.exec.scratchdir<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>/tmp/hive<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">description</span>&gt;</span>HDFS root scratch dir for Hive jobs which gets created with write all (733) permission. For each connecting user, an HDFS scratch dir: $&#123;hive.exec.scratchdir&#125;/&amp;lt;username&amp;gt; is created, with $&#123;hive.scratch.dir.permission&#125;.<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.exec.local.scratchdir<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>/tmp/hive/local<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">description</span>&gt;</span>Local scratch space for Hive jobs<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.downloaded.resources.dir<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">value</span>&gt;</span>/tmp/hive/resources<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">description</span>&gt;</span>Temporary local directory for added resources in the remote file system.<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>下载jdbc的jar包=》wget <a href="http://115.156.188.231/cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.40.tar.gz" target="_blank" rel="external">http://115.156.188.231/cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.40.tar.gz</a></p>
+<p>拷贝mysql-connector-java-5.1.40-bin.jar 到hive 的lib下面<br>mv mysql-connector-java-5.1.40-bin.jar /root/feiwang/hive-2.0/lib/</p>
+<p>启动元数据 =》<strong>bin/hive –service metastore &amp;</strong></p>
+<h3 id="验证">验证</h3><p>运行 hive命令,创建表：<br><img src="/img/4.jpg" alt=""><br>进入mysql会发现hive数据库自动生成了很多表<br><img src="/img/5.jpg" alt=""><br>进入hadoop的hdfs会发现也有两个文件夹生成了<br>Found 2 items<br><strong>drwxr-xr-x   - root supergroup          0 2016-11-24 21:43 /user/hive/warehouse/diablo</strong><br><strong>drwxr-xr-x   - root supergroup          0 2016-11-24 19:45 /user/hive/warehouse/kzx</strong></p>
+<h3 id="简单介绍下hive">简单介绍下hive</h3><p>Hive是运行在Hadoop之上的数据仓库，将结构化的数据文件映射为一张数据库表，提供简单类SQL查询语言，称为HQL，并将SQL语句转换成MapReduce任务运。有利于利用SQL语言查询、分析数据，适于处理不频繁变动的数据。Hive底层可以是HBase或者HDFS存储的文件。两者都是基于Hadoop上不同的技术，相互结合使用，可处理企业中不同类型的业务，利用Hive处理非结构化离线分析统计，利用HBase处理在线查询。<br>Hive三种元数据存储方式：<br>1&gt;.本地derby存储，只允许一个用户连接Hive，适用于测试环境<br>2&gt;.本地/远程MySQL存储，支持多用户连接Hive，适用于生产环境</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/24/hive-mysql/" class="archive-article-date">
+  	<time datetime="2016-11-24T07:39:47.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-24</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hive/">hive</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/配环境/">配环境</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/26/java-optimize/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          论jvm优化
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/11/stephen-chow/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">什么样的Stephen Chow</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 GoodGod
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js" type="text/javascript"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/C语言/" style="font-size: 10px;">C语言</a> <a href="/tags/NIO/" style="font-size: 10px;">NIO</a> <a href="/tags/bug/" style="font-size: 20px;">bug</a> <a href="/tags/hive/" style="font-size: 10px;">hive</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/photo/" style="font-size: 10px;">photo</a> <a href="/tags/spark/" style="font-size: 10px;">spark</a> <a href="/tags/内存/" style="font-size: 20px;">内存</a> <a href="/tags/周星驰/" style="font-size: 10px;">周星驰</a> <a href="/tags/天池/" style="font-size: 10px;">天池</a> <a href="/tags/扯淡学/" style="font-size: 20px;">扯淡学</a> <a href="/tags/摇滚/" style="font-size: 10px;">摇滚</a> <a href="/tags/配环境/" style="font-size: 10px;">配环境</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
