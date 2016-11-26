@@ -74,7 +74,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="IceKe Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="GoodGod Blog" type="application/atom+xml" />
 
 
 
@@ -89,10 +89,10 @@
 <meta name="description" content="一些要交代的假设你是一个普通的 Java 对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论jvm优化">
-<meta property="og:url" content="http://kzx1025.github.io/2016/11/26/java-optimize/index.html">
-<meta property="og:site_name" content="IceKe Blog">
+<meta property="og:url" content="http://GoodGodY.github.io/2016/11/26/java-optimize/index.html">
+<meta property="og:site_name" content="GoodGod Blog">
 <meta property="og:description" content="一些要交代的假设你是一个普通的 Java 对象">
-<meta property="og:updated_time" content="2016-11-24T17:43:02.000Z">
+<meta property="og:updated_time" content="2016-11-26T15:38:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="论jvm优化">
 <meta name="twitter:description" content="一些要交代的假设你是一个普通的 Java 对象">
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://kzx1025.github.io/2016/11/26/java-optimize/"/>
+  <link rel="canonical" href="http://GoodGodY.github.io/2016/11/26/java-optimize/"/>
 
 
 
 
 
-  <title> 论jvm优化 | IceKe Blog </title>
+  <title> 论jvm优化 | GoodGod Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,16 +137,6 @@
   
 
 
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?a88e4f713e82d83fca20629a674e70ea";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -170,7 +160,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">IceKe Blog</span>
+      <span class="site-title">GoodGod Blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -283,18 +273,18 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://kzx1025.github.io/2016/11/26/java-optimize/">
+  <link itemprop="mainEntityOfPage" href="http://GoodGodY.github.io/2016/11/26/java-optimize/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="IceKe">
+    <meta itemprop="name" content="GoodGod">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="http://ww3.sinaimg.cn/mw690/9f4f8aecjw8evoivlefirj20k00k0gop.jpg">
   </span>
 
   <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="IceKe Blog">
+    <meta itemprop="name" content="GoodGod Blog">
     <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="IceKe Blog" src="">
+      <img style="display:none;" itemprop="url image" alt="GoodGod Blog" src="">
     </span>
   </span>
 
@@ -333,13 +323,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <a href="/2016/11/26/java-optimize/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/java-optimize/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -421,25 +404,6 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/11/26/java-optimize/"
-     data-title="论jvm优化"
-     data-content=""
-     data-url="http://kzx1025.github.io/2016/11/26/java-optimize/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
     </div>
   </div>
 
@@ -450,10 +414,6 @@
 
           
   <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/11/26/java-optimize/"
-           data-title="论jvm优化" data-url="http://kzx1025.github.io/2016/11/26/java-optimize/">
-      </div>
     
   </div>
 
@@ -490,8 +450,8 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://ww3.sinaimg.cn/mw690/9f4f8aecjw8evoivlefirj20k00k0gop.jpg"
-               alt="IceKe" />
-          <p class="site-author-name" itemprop="name">IceKe</p>
+               alt="GoodGod" />
+          <p class="site-author-name" itemprop="name">GoodGod</p>
           <p class="site-description motion-element" itemprop="description">stay simple, stay naive</p>
         </div>
         <nav class="site-state motion-element">
@@ -528,20 +488,11 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/kzx1025" target="_blank" title="GitHub">
+                <a href="https://github.com/GoodGodY" target="_blank" title="GitHub">
                   
                     <i class="fa fa-fw fa-github"></i>
                   
                   GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/574455357" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
                 </a>
               </span>
             
@@ -603,12 +554,12 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy;  2015 - 
+  &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">IceKe</span>
+  <span class="author" itemprop="copyrightHolder">GoodGod</span>
 </div>
 
 
@@ -690,28 +641,14 @@
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"iceke1025"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
 
 
 
 
+	
 
 
 

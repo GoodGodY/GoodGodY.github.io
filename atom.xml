@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[IceKe Blog]]></title>
+  <title><![CDATA[GoodGod Blog]]></title>
   <subtitle><![CDATA[Stay simple, stay naive]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://kzx1025.github.io/"/>
-  <updated>2016-11-24T17:43:02.000Z</updated>
-  <id>http://kzx1025.github.io/</id>
+  <link href="http://GoodGodY.github.io/"/>
+  <updated>2016-11-26T15:38:44.000Z</updated>
+  <id>http://GoodGodY.github.io/</id>
   
   <author>
-    <name><![CDATA[IceKe]]></name>
+    <name><![CDATA[GoodGod]]></name>
     
   </author>
   
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[论jvm优化]]></title>
-    <link href="http://kzx1025.github.io/2016/11/26/java-optimize/"/>
-    <id>http://kzx1025.github.io/2016/11/26/java-optimize/</id>
+    <link href="http://GoodGodY.github.io/2016/11/26/java-optimize/"/>
+    <id>http://GoodGodY.github.io/2016/11/26/java-optimize/</id>
     <published>2016-11-26T14:20:00.000Z</published>
-    <updated>2016-11-24T17:43:02.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<h2 id="一些要交代的">一些要交代的</h2><p>假设你是一个普通的 Java 对象</p>
 ]]></content>
     <summary type="html">
@@ -27,18 +27,18 @@
 ]]>
     </summary>
     
-      <category term="java" scheme="http://kzx1025.github.io/tags/java/"/>
+      <category term="java" scheme="http://GoodGodY.github.io/tags/java/"/>
     
-      <category term="内存" scheme="http://kzx1025.github.io/tags/%E5%86%85%E5%AD%98/"/>
+      <category term="内存" scheme="http://GoodGodY.github.io/tags/%E5%86%85%E5%AD%98/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[科学配置hive+mysql+hadoop]]></title>
-    <link href="http://kzx1025.github.io/2016/11/24/hive-mysql/"/>
-    <id>http://kzx1025.github.io/2016/11/24/hive-mysql/</id>
+    <link href="http://GoodGodY.github.io/2016/11/24/hive-mysql/"/>
+    <id>http://GoodGodY.github.io/2016/11/24/hive-mysql/</id>
     <published>2016-11-24T07:39:47.000Z</published>
-    <updated>2016-11-24T13:58:52.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<h2 id="mysql配置">mysql配置</h2><p>先前的服务器mysql有一些莫名地故障，于是准备重装。贸然重装肯定是一件愚蠢的事，首先要做的是把原有的mysql卸载干净。但如果你的mysql能正常地工作，那当我没提起这件事。卸载遵循以下步骤：</p>
 <pre><code><span class="keyword">*</span>运行rpm -qa|<span class="string">grep -i mysql。 显示如下：</span>
 </code></pre><p><img src="/img/3.jpg" alt=""></p>
@@ -61,20 +61,20 @@
 <pre><]]>
     </summary>
     
-      <category term="hive" scheme="http://kzx1025.github.io/tags/hive/"/>
+      <category term="hive" scheme="http://GoodGodY.github.io/tags/hive/"/>
     
-      <category term="mysql" scheme="http://kzx1025.github.io/tags/mysql/"/>
+      <category term="mysql" scheme="http://GoodGodY.github.io/tags/mysql/"/>
     
-      <category term="配环境" scheme="http://kzx1025.github.io/tags/%E9%85%8D%E7%8E%AF%E5%A2%83/"/>
+      <category term="配环境" scheme="http://GoodGodY.github.io/tags/%E9%85%8D%E7%8E%AF%E5%A2%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[什么样的Stephen Chow]]></title>
-    <link href="http://kzx1025.github.io/2016/11/11/stephen-chow/"/>
-    <id>http://kzx1025.github.io/2016/11/11/stephen-chow/</id>
+    <link href="http://GoodGodY.github.io/2016/11/11/stephen-chow/"/>
+    <id>http://GoodGodY.github.io/2016/11/11/stephen-chow/</id>
     <published>2016-11-11T14:20:00.000Z</published>
-    <updated>2016-11-24T13:55:38.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<p>我一直认为,在我进入大学后出现了两位我人生中的精神导师,这个词意义说起来挺重大的,但我的确是认真<br>的说出了这句话.他们一位是作家,一位是演员.他们的名字叫做王小波和周星驰.<br>//待更新,看心情</p>
 ]]></content>
     <summary type="html">
@@ -82,18 +82,18 @@
 ]]>
     </summary>
     
-      <category term="周星驰" scheme="http://kzx1025.github.io/tags/%E5%91%A8%E6%98%9F%E9%A9%B0/"/>
+      <category term="周星驰" scheme="http://GoodGodY.github.io/tags/%E5%91%A8%E6%98%9F%E9%A9%B0/"/>
     
-      <category term="扯淡学" scheme="http://kzx1025.github.io/tags/%E6%89%AF%E6%B7%A1%E5%AD%A6/"/>
+      <category term="扯淡学" scheme="http://GoodGodY.github.io/tags/%E6%89%AF%E6%B7%A1%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[在大菠萝中遇到的一些小问题]]></title>
-    <link href="http://kzx1025.github.io/2016/10/10/diablo/"/>
-    <id>http://kzx1025.github.io/2016/10/10/diablo/</id>
+    <link href="http://GoodGodY.github.io/2016/10/10/diablo/"/>
+    <id>http://GoodGodY.github.io/2016/10/10/diablo/</id>
     <published>2016-10-10T07:20:00.000Z</published>
-    <updated>2016-11-22T09:17:25.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<h2 id="大菠萝的任务">大菠萝的任务</h2><p>大菠萝全名diablo technology,是一家硬件技术外企.但是我是一名纯软界的小小码农,怎么会帮一个硬件公司做事呢.起初是这家公司中国区的技术人员跟我们组里的陆博大大比较熟,他们想招一两个懂Spark的人帮他们做一些测试和性能上的优化来得出他们研发的新硬件M1相比于市场上普通内存的特性与性能差异.于是陆博建议我担任这份兼职,工作不多而且还可以增一份不错的收入,众所周知,这种事情我是无法拒绝的.</p>
 <p>为了推广M1,他们需要在M1上运行很多工业市场上流行的吃内存的软件与平台,包括spark,mysql,redis等.所以这三个月我就没事帮他们写一点测试的代码,优化spark的配置,寻找运行错误的bug,搭建redis-cluster这种活.期间爬过很多坑,有几个瞬间我感觉到自己是技术顾问,让我小小地膨胀一下.</p>
 <h2 id="C程序的测试">C程序的测试</h2><p>C语言我是有好几年没碰了,作为一个大四以后一直在jvm语言中游走,有时用python写点小项目的人,几乎对指针这种东西处于懵逼模式.</p>
@@ -140,21 +140,21 @@
     <![CDATA[<h2 id="大菠萝的任务">大菠萝的任务</h2><p>大菠萝全名diablo technology,是一家硬件技术外企.但是我是一名纯软界的小小码农,怎么会帮一个硬件公司做事呢.起初是这家公司中国区的技术人员跟我们组里的陆博大大比较熟,他们想招一两个懂Spark的人帮他们做]]>
     </summary>
     
-      <category term="C语言" scheme="http://kzx1025.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+      <category term="C语言" scheme="http://GoodGodY.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
     
-      <category term="bug" scheme="http://kzx1025.github.io/tags/bug/"/>
+      <category term="bug" scheme="http://GoodGodY.github.io/tags/bug/"/>
     
-      <category term="内存" scheme="http://kzx1025.github.io/tags/%E5%86%85%E5%AD%98/"/>
+      <category term="内存" scheme="http://GoodGodY.github.io/tags/%E5%86%85%E5%AD%98/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[修改Spark内核(Deca)所产生的两个奇怪bug]]></title>
-    <link href="http://kzx1025.github.io/2016/09/28/spark-bug/"/>
-    <id>http://kzx1025.github.io/2016/09/28/spark-bug/</id>
+    <link href="http://GoodGodY.github.io/2016/09/28/spark-bug/"/>
+    <id>http://GoodGodY.github.io/2016/09/28/spark-bug/</id>
     <published>2016-09-28T07:39:47.000Z</published>
-    <updated>2016-11-22T09:30:34.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="Spark将数据放在jvm堆外导致无故卡死">Spark将数据放在jvm堆外导致无故卡死</h2><h3 id="思路实现与问题产生">思路实现与问题产生</h3><p>我们内存计算小组博士的文章Deca经过一年的努力终于中了vldb,作为其中参与了一些微小的工作的男人,虽然对其中一部分细节不是太清楚,因为这个Deca系统的开发涉及到将近5个人,我的工作囊括一下就是: </p>
+    <updated>2016-11-26T15:38:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Spark将数据放在jvm堆外导致无故卡死">Spark将数据放在jvm堆外导致无故卡死</h2><h3 id="思路实现与问题产生">思路实现与问题产生</h3><p>咱们内存计算小组陆博的文章Deca经过一年的努力终于中了vldb,作为其中参与了一些微小的工作的男人,虽然对其中一部分细节不是太清楚,因为这个Deca系统的开发涉及到将近5个人,我的工作囊括一下就是: </p>
 <pre><code><span class="number">1.</span>完成了其中UDF的转换,将方法的操作转为对字节数组的操作;
 <span class="number">2.</span>手写了Deca的手动版的代码,就是利用Deca的思想对Spark应用的代码进行改造;
 <span class="number">3.</span>进行了大量的测试并统计GC时间,stage时间等相关数据.
@@ -178,21 +178,21 @@
 <p>之后还遇到CacheChunk自动扩增容量的问题,不过解决起来比较简单,就不在此描述.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="Spark将数据放在jvm堆外导致无故卡死">Spark将数据放在jvm堆外导致无故卡死</h2><h3 id="思路实现与问题产生">思路实现与问题产生</h3><p>我们内存计算小组博士的文章Deca经过一年的努力终于中了vldb,作为其中参与了一些微小的工作]]>
+    <![CDATA[<h2 id="Spark将数据放在jvm堆外导致无故卡死">Spark将数据放在jvm堆外导致无故卡死</h2><h3 id="思路实现与问题产生">思路实现与问题产生</h3><p>咱们内存计算小组陆博的文章Deca经过一年的努力终于中了vldb,作为其中参与了一些微小的工作]]>
     </summary>
     
-      <category term="bug" scheme="http://kzx1025.github.io/tags/bug/"/>
+      <category term="bug" scheme="http://GoodGodY.github.io/tags/bug/"/>
     
-      <category term="spark" scheme="http://kzx1025.github.io/tags/spark/"/>
+      <category term="spark" scheme="http://GoodGodY.github.io/tags/spark/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[论思想同化的艺术]]></title>
-    <link href="http://kzx1025.github.io/2016/09/11/assimilation/"/>
-    <id>http://kzx1025.github.io/2016/09/11/assimilation/</id>
+    <link href="http://GoodGodY.github.io/2016/09/11/assimilation/"/>
+    <id>http://GoodGodY.github.io/2016/09/11/assimilation/</id>
     <published>2016-09-11T12:20:00.000Z</published>
-    <updated>2016-11-24T18:24:43.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<div style="width:50%;"><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=29283291&auto=1&height=66"></iframe><br></div>
 
 
@@ -207,18 +207,18 @@
     <![CDATA[<div style="width:50%;"><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.1]]>
     </summary>
     
-      <category term="扯淡学" scheme="http://kzx1025.github.io/tags/%E6%89%AF%E6%B7%A1%E5%AD%A6/"/>
+      <category term="扯淡学" scheme="http://GoodGodY.github.io/tags/%E6%89%AF%E6%B7%A1%E5%AD%A6/"/>
     
-      <category term="摇滚" scheme="http://kzx1025.github.io/tags/%E6%91%87%E6%BB%9A/"/>
+      <category term="摇滚" scheme="http://GoodGodY.github.io/tags/%E6%91%87%E6%BB%9A/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[借天池中间件复赛谈NIO]]></title>
-    <link href="http://kzx1025.github.io/2016/08/15/tianchi-nio/"/>
-    <id>http://kzx1025.github.io/2016/08/15/tianchi-nio/</id>
+    <link href="http://GoodGodY.github.io/2016/08/15/tianchi-nio/"/>
+    <id>http://GoodGodY.github.io/2016/08/15/tianchi-nio/</id>
     <published>2016-08-15T12:20:00.000Z</published>
-    <updated>2016-11-24T12:53:40.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"><![CDATA[<h2 id="比赛的简单总结">比赛的简单总结</h2><p>参加天池是被裴师兄安利的,这个很重要.在我眼中,裴博代码一直是写得飞起的那种,就是一边用B站放着billboard榜单,一边在那啪啪啪敲着代码,这看起来绝对很酷.所以我内心是崇拜他的,至少在技术上,他很刻苦,表现在很多方面.在此不一一赘述,因为我并不想在这开表彰会.他告诉我参加这个比赛会收获很多,我当然无条件相信,他当时参加的是机器学习相关的比赛.上半年正好有一场预测音乐播放量的比赛,我便屁颠颠地参加,对机器学习一窍不通,于是便慢慢学,特征,建立模型,训练.耗时一个半月,纯模型效果并不好,于是加了一些规则,后来还用了股票里经常遇到的时序模型,嗯,挺高大上的.这个比赛的确学习了很多,但总感觉浮于表面,略显浮夸,写代码也不是很多,更多的参赛选手都是搞机器学习和数学统计的,我并不在行.</p>
 <p>这时候一个新比赛来华科路演,跑过去听了一听,意料之中,没什么太大收获,但是这个比赛引起了我极大的兴趣.首先它涉及系统设计,代码量跟机器学习类的比赛肯定不是一个级别,初赛和复赛考察内容很不一样.我觉得这种比赛还是很有趣的,但可能比较累,因为代码一多,因此而诞生的bug也会多起来,这点不太像机器学习的比赛,大部分时间是在等待和思考策略,动手的时间并不多.</p>
 <p>中间件比赛分为初赛和复赛.初赛是实现一个实时统计双十一交易数据的系统,用到了三个组件jstorm,rocketmq和tair.都是阿里自家的产品,但都可以在原先的开源平台中找到原型,分别是storm,rabbitmq和redis.用法和api也大同小异,这个题目考察的主要还是熟悉这三个系统的使用,基本程序能正常运行跑出结果就能进前100了,如果想要跑到更好的成绩就需要想到更好的缓存策略.但你又不能把所有数据常驻内存,这样程序就会挂掉,而且这也不符合流计算的思想,流计算就应该是将数据想象成一段水流(不免让人想起破坏之王里的断水流大师兄),只不过水流会途径一些地方经过加工,如果水流囤积,那必然引起溃堤等风险.我的基本策略是jstorm的bolt主线程处理数据并统计,再开一个独立的线程用于数据的同步然后发送到下一个bolt.对我来说jstorm和storm最不同的一点就是:jstorm的Spout nextTuple和ack/fail运行在不同线程,这样可以防止CPU空转.storm的bolt和spout组件构成一个topology,一个设计优雅的拓扑图也是可以大大提高程序性能的.</p>
@@ -234,26 +234,26 @@
     <![CDATA[<h2 id="比赛的简单总结">比赛的简单总结</h2><p>参加天池是被裴师兄安利的,这个很重要.在我眼中,裴博代码一直是写得飞起的那种,就是一边用B站放着billboard榜单,一边在那啪啪啪敲着代码,这看起来绝对很酷.所以我内心是崇拜他的,至少在技术上,他很刻苦,表现在很]]>
     </summary>
     
-      <category term="NIO" scheme="http://kzx1025.github.io/tags/NIO/"/>
+      <category term="NIO" scheme="http://GoodGodY.github.io/tags/NIO/"/>
     
-      <category term="java" scheme="http://kzx1025.github.io/tags/java/"/>
+      <category term="java" scheme="http://GoodGodY.github.io/tags/java/"/>
     
-      <category term="天池" scheme="http://kzx1025.github.io/tags/%E5%A4%A9%E6%B1%A0/"/>
+      <category term="天池" scheme="http://GoodGodY.github.io/tags/%E5%A4%A9%E6%B1%A0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Some Pictures]]></title>
-    <link href="http://kzx1025.github.io/2015/10/14/Some-Pictures/"/>
-    <id>http://kzx1025.github.io/2015/10/14/Some-Pictures/</id>
+    <link href="http://GoodGodY.github.io/2015/10/14/Some-Pictures/"/>
+    <id>http://GoodGodY.github.io/2015/10/14/Some-Pictures/</id>
     <published>2015-10-14T15:52:17.000Z</published>
-    <updated>2015-10-14T15:53:17.000Z</updated>
+    <updated>2016-11-26T15:38:44.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
     </summary>
     
-      <category term="photo" scheme="http://kzx1025.github.io/tags/photo/"/>
+      <category term="photo" scheme="http://GoodGodY.github.io/tags/photo/"/>
     
   </entry>
   
